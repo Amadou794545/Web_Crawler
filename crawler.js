@@ -1,44 +1,50 @@
-const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args));
-const cheerio = require('cheerio');
+const puppeteer = require('puppeteer');
 
 const newsSites = [
     {
         name: 'BBC News',
         url: 'https://www.bbc.co.uk/news',
-    },
-    {
-        name: 'CNN',
-        url: 'https://www.cnn.com/',
+        titleSelector: 'h3.gs-c-promo-heading__title',
+        linkSelector: 'a.gs-c-promo-heading',
     },
     // Ajoutez d'autres sites d'actualités ici
 ];
 
-async function crawlNewsSites() {
+const crawlNewsSites = async () => {
     try {
+        const browser = await puppeteer.launch({ headless: true });
+        const page = await browser.newPage();
+
         for (const site of newsSites) {
-            console.log(`Crawling ${site.name}`);
+            console.log(`Crawling ${site.name}...`);
+            await page.goto(site.url, { timeout: 30000 });
+            await page.waitForSelector(site.titleSelector);
 
-            const response = await fetch(site.url);
-            const html = await response.text();
-            const $ = cheerio.load(html);
+            const articles = await page.evaluate((titleSelector, linkSelector) => {
+                const articleTitles = Array.from(document.querySelectorAll(titleSelector));
+                const articleLinks = Array.from(document.querySelectorAll(linkSelector));
 
-            // Sélecteur CSS pour les titres des articles
-            const titleSelector = 'a.gs-c-promo-heading';
+                return articleTitles.map((titleElement, index) => ({
+                    title: titleElement.textContent.trim(),
+                    link: articleLinks[index].href,
+                }));
+            }, site.titleSelector, site.linkSelector);
 
-            $(titleSelector).each((index, element) => {
-                const title = $(element).text().trim();
-                const link = $(element).attr('href');
-
-                console.log(`Title: ${title}`);
-                console.log(`Link: ${link}`);
+            console.log(`Articles from ${site.name}:`);
+            articles.forEach((article) => {
+                console.log(`Title: ${article.title}`);
+                console.log(`Link: ${article.link}`);
                 console.log('---');
             });
 
-            console.log(`Crawling ${site.name} completed\n`);
+            console.log(`${site.name} crawling finished.`);
+            console.log('---');
         }
+
+        await browser.close();
     } catch (error) {
-        console.error('An error occurred during crawling:', error);
+        console.error('Une erreur s\'est produite lors du crawl :', error);
     }
-}
+};
 
 crawlNewsSites();
