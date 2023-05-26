@@ -1,13 +1,15 @@
-import express from "express";
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
-import * as path from "path";
+const express = require('express');
+const path = require('path');
+
 const app = express();
-const __dirname = dirname(fileURLToPath(import.meta.url));
+
+// Définir le dossier statique pour servir les fichiers CSS, JavaScript, etc.
+app.use(express.static(path.join(__dirname, '../..')));
+
 app.get('/', (req, res) => {
-    res.sendFile(__dirname + "\\index.html")
-    // res.sendFile(path.join('Web/template/start.html'));
+    res.sendFile(path.join(__dirname, '../../template', 'index.html'));
 });
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);

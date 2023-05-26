@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="dossier organiser">
+    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="index.html fixed1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/parseJson.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/parseJson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -122,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685104425425</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="index.html fixed1">
+      <created>1685105668387</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685105668387</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +169,7 @@
     <MESSAGE value="add crawler.js &amp; utils.js and delete crawl.js and crawl.test" />
     <MESSAGE value="puppeter with BBC" />
     <MESSAGE value="dossier organiser" />
-    <option name="LAST_COMMIT_MESSAGE" value="dossier organiser" />
+    <MESSAGE value="index.html fixed1" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.html fixed1" />
   </component>
 </project>
