@@ -88,11 +88,8 @@ async function searchArticleByDayMonthYear(link, year) {
     }
 }
 
-// Utilisation : spécifier le lien vers la page du jour, le mois et l'année
-searchArticleByDayMonthYear('https://fr.wikipedia.org/wiki/30_novembre', '1786');
 
 
 
-// Utilisation : spécifier le mois et l'année souhaités (mois : 'Janvier' , 'Février' , 'Mars' , 'Avril' , 'Mai' , 'Juin' , 'Juillet' , 'Août' , 'Septembre' , 'Octobre' , 'Novembre' , 'Décembre')
-searchEventsByMonthYear('Décembre', '2019');
 
+// Utilisation : spécifier le mois et l'année souhaités (mois orthographes : 'Janvier' , 'Février' , 'Mars' , 'Avril' , 'Mai' , 'Juin' , 'Juillet' , 'Août' , 'Septembre' , 'Octobre' , 'Novembre' , 'Décembre')
