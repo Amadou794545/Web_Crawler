@@ -11,10 +11,10 @@
 <form name="date-input-form">
     <h1>Information on what date do you want??</h1>
 
-    <div class="date-group" role="group">
+    <div role="group" class="date-group">
         <div class="fieldgroup month">
-            <select id="options" name="options">
-                <option disabled selected value="0"></option>
+            <select name="options" id="options">
+                <option value="selectionnez un mois">selectionnez un mois</option>
                 <option value="Janvier">Janvier</option>
                 <option value="Février">Février</option>
                 <option value="Mars">Mars</option>
@@ -32,30 +32,14 @@
         </div>
 
         <div class="fieldgroup year">
-            <input max="2023" min="0" name="year" required type="number">
+            <input type="number" name="year" min="0" max="2023" required>
             <label for="year">Year</label>
         </div>
     </div>
-    <input id="confirm" type="button" value="Confirm">
-    <input id="reset" type="reset" value="Reset">
+    <input type="button" value="Confirmer" id="confirm">
 </form>
 
-<script>// Récupérer le bouton "Confirm"
-var confirmButton = document.querySelector("#confirm");
-
-// Ajouter un gestionnaire d'événement lorsque le bouton "Confirm" est cliqué
-confirmButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Empêcher le comportement par défaut du bouton (rechargement de la page)
-
-    // Récupérer les valeurs des champs de formulaire
-    var month = document.querySelector("#options").value;
-    var year = document.querySelector("input[name='year']").value;
-
-    // Afficher les valeurs
-    var resultContainer = document.createElement("div");
-    resultContainer.textContent = "Month: " + month + ", Year: " + year;
-    document.body.appendChild(resultContainer);
-});</script>
+<script src="static/js/showDate.js"></script>
 
 </body>
 </html>
