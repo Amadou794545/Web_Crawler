@@ -1,0 +1,34 @@
+<!-- events.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Événements</title>
+</head>
+<body>
+<h1>Événements</h1>
+<div id="events"></div>
+<a href="index.html">Retour à la recherche</a>
+
+<script>
+    // Récupérer les paramètres de l'URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const date = urlParams.get('date');
+
+    // Fonction pour récupérer les événements
+    function getEvents(date) {
+        // Utilisez votre logique pour récupérer les événements
+        // en fonction de la date spécifiée
+
+        // Exemple de code pour afficher les événements dans la page
+        const eventsDiv = document.getElementById('events');
+        eventsDiv.innerHTML = `<p>Événements pour la date : ${date}</p>`;
+        // Affichez les événements récupérés ici
+    }
+
+    // Appel de la fonction pour récupérer les événements
+    getEvents(date);
+</script>
+</body>
+</html>

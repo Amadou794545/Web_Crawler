@@ -1,0 +1,18 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Recherche d'événements</title>
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Recherche d'événements</h1>
+<form onsubmit="event.preventDefault(); searchEvents()">
+    <label for="dateInput">Date (mois/année) :</label>
+    <input type="text" id="dateInput" required>
+    <button type="submit">Rechercher</button>
+</form>
+</body>
+</html>
