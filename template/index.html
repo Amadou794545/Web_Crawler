@@ -6,10 +6,27 @@
 </head>
 
 <body>
-<h1>Crawlendar</h1>
+<h1 class="titre">Crawlendar</h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>Dim</th>
+        <th>Lun</th>
+        <th>Mar</th>
+        <th>Mer</th>
+        <th>Jeu</th>
+        <th>Ven</th>
+        <th>Sam</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Code pour afficher les jours du calendrier -->
+    </tbody>
+</table>
 
 <form name="date-input-form">
-    <h1>Information on what date do you want??</h1>
+    <h1>Pour quel année souhaitez vous avec des informations?</h1>
 
     <div role="group" class="date-group">
         <div class="fieldgroup month">
@@ -38,6 +55,11 @@
     </div>
     <input type="button" value="Confirmer" id="confirm">
 </form>
+
+<div class="reponse">
+    <p>blabla</p>
+</div>
+
 
 <script src="static/js/showDate.js"></script>
 
