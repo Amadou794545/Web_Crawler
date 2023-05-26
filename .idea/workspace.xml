@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="add crawler.js &amp; utils.js and delete crawl.js and crawl.test">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler.js" beforeDir="false" afterPath="$PROJECT_DIR$/crawler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="dossier organiser">
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/edand/Desktop/web-crawler_js/template&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -60,8 +58,15 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\template" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\edand\Desktop\web-crawler_js\test" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\json" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\static\css" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\static\js" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\static" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -79,7 +84,8 @@
       <workItem from="1684917876247" duration="8241000" />
       <workItem from="1684945835252" duration="1908000" />
       <workItem from="1684948673381" duration="240000" />
-      <workItem from="1685016918781" duration="1289000" />
+      <workItem from="1685016918781" duration="8905000" />
+      <workItem from="1685094078397" duration="6628000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore + crawl.js">
       <created>1683618569084</created>
@@ -102,7 +108,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684948796931</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="puppeter with BBC">
+      <created>1685018623491</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1685018623491</updated>
+    </task>
+    <task id="LOCAL-00005" summary="dossier organiser">
+      <created>1685104425425</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1685104425425</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +156,8 @@
     <MESSAGE value="add gitignore + crawl.js" />
     <MESSAGE value="add gitignore + modules functional" />
     <MESSAGE value="add crawler.js &amp; utils.js and delete crawl.js and crawl.test" />
-    <option name="LAST_COMMIT_MESSAGE" value="add crawler.js &amp; utils.js and delete crawl.js and crawl.test" />
+    <MESSAGE value="puppeter with BBC" />
+    <MESSAGE value="dossier organiser" />
+    <option name="LAST_COMMIT_MESSAGE" value="dossier organiser" />
   </component>
 </project>
