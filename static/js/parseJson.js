@@ -6,6 +6,7 @@ const filePath = path.join(__dirname, '../..', 'events.json');
 try {
     const jsonData = fs.readFileSync(filePath, 'utf-8');
     const parsedData = JSON.parse(jsonData);
+    console.log(parsedData);
 
     parsedData.forEach((event) => {
         console.log(event.day);
