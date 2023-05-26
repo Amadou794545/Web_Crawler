@@ -22,8 +22,8 @@
             margin: calc(50vh - 200px) auto 0 auto;
             padding: 50px;
             border-radius: 5px;
-            box-shadow: 0 5px 30px rgba(0,0,0,.2);
-            border-bottom: 1px solid rgba(0,0,0,.3);
+            box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+            border-bottom: 1px solid rgba(0, 0, 0, .3);
         }
 
         select,
@@ -51,7 +51,7 @@
 
         select:focus {
             outline: none;
-            background: rgba(0,0,0,.1);
+            background: rgba(0, 0, 0, .1);
             padding-left: .4rem;
         }
 
@@ -92,7 +92,6 @@
 
         label {
             position: absolute;
-            top: 1.2rem;
             left: 0;
             display: block;
             font-size: 1rem;
@@ -106,7 +105,7 @@
             font-size: 1.5rem;
             padding: .6rem;
             padding-left: 0;
-            background:transparent;
+            background: transparent;
             border: none;
             border-bottom: 2px solid #ffcc33;
             transition: 0.3s;
@@ -116,17 +115,20 @@
 
         input:focus {
             outline: none;
+
         }
 
         input:valid {
             border-color: #0bcc6c;
+
         }
 
         input:focus + label,
         input.hasInput + label {
-            top: -.6rem;
+            /* top: -.6rem;*/
             font-size: .7rem;
             cursor: pointer;
+            top: -.9rem;
         }
 
         .month {
@@ -175,13 +177,43 @@
         #reset:focus,
         #reset:hover {
             outline: none;
-            box-shadow: 0 3px 40px rgba(0,0,0,.2);
+            box-shadow: 0 3px 40px rgba(0, 0, 0, .2);
         }
 
         #reset:active {
-            border: 1px solid rgba(0,0,0,.2);
+            border: 1px solid rgba(0, 0, 0, .2);
             transition: 0.3s;
-            box-shadow: 0 3px 60px rgba(0,0,0,.3);
+            box-shadow: 0 3px 60px rgba(0, 0, 0, .3);
+        }
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+#confirm {
+            display: block;
+            width: 50%;
+            border: none;
+            margin: 5vh auto 0 auto;
+            color: #1185cf;
+            text-align: center;
+            background: transparent;
+            border-radius: 50px;
+            padding: .8rem;
+            border: 1px solid transparent;
+            transition: 0.3s;
+        }
+
+        #confirm:focus,
+        #confirm:hover {
+            outline: none;
+            box-shadow: 0 3px 40px rgba(0, 0, 0, .2);
+        }
+
+        #confirm:active {
+            border: 1px solid rgba(0, 0, 0, .2);
+            transition: 0.3s;
+            box-shadow: 0 3px 60px rgba(0, 0, 0, .3);
         }
 
         input[type=number]::-webkit-inner-spin-button,
@@ -196,7 +228,7 @@
 <h1>Crawlendar</h1>
 
 <form name="date-input-form">
-    <h1>Want to go on a date?</h1>
+    <h1>Information on what date do you want??</h1>
 
     <div role="group" class="date-group">
         <div class="fieldgroup month">
@@ -223,8 +255,26 @@
             <label for="year">Year</label>
         </div>
     </div>
-
+    <input type="button" value="Confirm" id="confirm">
     <input type="reset" value="Reset" id="reset">
 </form>
+
+<script >// Récupérer le bouton "Confirm"
+var confirmButton = document.querySelector("#confirm");
+
+// Ajouter un gestionnaire d'événement lorsque le bouton "Confirm" est cliqué
+confirmButton.addEventListener("click", function(event) {
+    event.preventDefault(); // Empêcher le comportement par défaut du bouton (rechargement de la page)
+
+    // Récupérer les valeurs des champs de formulaire
+    var month = document.querySelector("#options").value;
+    var year = document.querySelector("input[name='year']").value;
+
+    // Afficher les valeurs
+    var resultContainer = document.createElement("div");
+    resultContainer.textContent = "Month: " + month + ", Year: " + year;
+    document.body.appendChild(resultContainer);
+});</script>
+
 </body>
 </html>
