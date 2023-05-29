@@ -103,3 +103,4 @@ for (var i = 0; i < 6; i++) {
     // Ajoutez la ligne au tbody
     tbody.appendChild(row);
 }
+

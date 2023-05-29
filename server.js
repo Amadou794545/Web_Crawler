@@ -20,7 +20,7 @@ app.get('/', async (req, res) => {
         for (const event of parsedData) {
             const article = await searchArticle(event.link, year);
             if (article) {
-                eventsText += `Le ${event.day} ${month} ${year}, ${article}`;
+                eventsText += `Le ${event.day} ${month} ${year}, ${article} \n`;
                 hasMatchingArticles = true;
             }
         }
