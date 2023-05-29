@@ -35,7 +35,7 @@ async function searchEvents(month, year) {
                 });
         });
         const data = JSON.stringify(events, null, 2);
-        fs.writeFileSync('../../events.json', data);
+        fs.writeFileSync('./events.json', data);
         console.log(`Les informations pour ${month} ${year} ont été enregistrées dans events.json.`);
     } catch (error) {
         console.error('Une erreur est survenue :', error);
