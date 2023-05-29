@@ -78,6 +78,7 @@ async function searchArticle(link, year) {
         }, year);
         if (article) {
             console.log(`Phrase trouvée : ${article.title}`);
+            return article.title;
         } else {
             console.log(`Aucune phrase trouvée pour l'année ${year}.`);
         }

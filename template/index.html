@@ -2,19 +2,19 @@
 <html>
 <head>
     <title>Crawlendar</title>
-    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 
 <body>
 <h1>Crawlendar</h1>
 
-<form name="date-input-form" action="/search" method="POST">
+<form name="date-input-form" action="" method="GET">
 
     <h1>Rentrez un date au format mois/année</h1>
 
     <div class="date-group" role="group">
         <div class="fieldgroup month">
-            <select id="month" name="month">
+            <select id="month" name="month" required>
                 <option disabled selected value=""></option>
                 <option value="Janvier">Janvier</option>
                 <option value="Février">Février</option>
