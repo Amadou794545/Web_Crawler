@@ -1,11 +1,19 @@
-const confirmButton = document.getElementById('confirm');
-confirmButton.addEventListener('click', () => {
-    const monthSelect = document.getElementById('month');
-    const selectedMonth = monthSelect.value;
+document.getElementById('confirm').addEventListener('click', () => {
+    const month = document.getElementById('month').value;
+    const year = document.getElementById('year').value;
 
-    const yearInput = document.getElementById('year');
-    const selectedYear = yearInput.value;
-
-    // Rediriger vers la route principale avec les paramètres de mois et d'année
-    window.location.href = `/?month=${selectedMonth}&year=${selectedYear}`;
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', `/?month=${month}&year=${year}`);
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+            const response = JSON.parse(xhr.responseText);
+            const reponseContent = document.getElementById('reponseContent');
+            if (response.message) {
+                reponseContent.textContent = response.message;
+            } else {
+                reponseContent.textContent = response.eventsText;
+            }
+        }
+    };
+    xhr.send();
 });

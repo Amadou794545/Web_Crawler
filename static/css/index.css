@@ -217,12 +217,12 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
 }
 
-.reponse{
+.reponse {
     background: white;
     margin-left: auto;
     margin-right: auto;
-    width: 100vh;
-    height: 50vh;
+    width: 80%;
+    min-height: 50vh;
     border-radius: 5px;
     box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
     border-bottom: 1px solid rgba(0, 0, 0, .3);
