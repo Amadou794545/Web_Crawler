@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="index.html fixed1">
+    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="css">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_30__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_30__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_37__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_37__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_38__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_05_2023_18_40__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/events.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/parseJson.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/parseJson.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +72,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\edand\Desktop\web-crawler_js" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\static\js" />
       <recent name="C:\Users\edand\Desktop\web-crawler_js\json" />
       <recent name="C:\Users\edand\Desktop\web-crawler_js\static\css" />
-      <recent name="C:\Users\edand\Desktop\web-crawler_js\static\js" />
       <recent name="C:\Users\edand\Desktop\web-crawler_js\static" />
     </key>
   </component>
@@ -90,6 +95,8 @@
       <workItem from="1684948673381" duration="240000" />
       <workItem from="1685016918781" duration="8905000" />
       <workItem from="1685094078397" duration="6628000" />
+      <workItem from="1685362948675" duration="4483000" />
+      <workItem from="1685372472568" duration="4780000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore + crawl.js">
       <created>1683618569084</created>
@@ -133,7 +140,56 @@
       <option name="project" value="LOCAL" />
       <updated>1685105668387</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="index.html et css fixed2">
+      <created>1685107291945</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685107291945</updated>
+    </task>
+    <task id="LOCAL-00008" summary="index.html et css fixed3">
+      <created>1685107505846</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685107505846</updated>
+    </task>
+    <task id="LOCAL-00009" summary="test 2">
+      <created>1685362989400</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685362989400</updated>
+    </task>
+    <task id="LOCAL-00010" summary="test 3">
+      <created>1685372210499</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1685372210499</updated>
+    </task>
+    <task id="LOCAL-00011" summary="script se rapproche de la fin">
+      <created>1685373822940</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685373822940</updated>
+    </task>
+    <task id="LOCAL-00012" summary="fini (presque) manque">
+      <created>1685375121735</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1685375121735</updated>
+    </task>
+    <task id="LOCAL-00013" summary="css">
+      <created>1685378574033</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1685378574033</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +226,13 @@
     <MESSAGE value="puppeter with BBC" />
     <MESSAGE value="dossier organiser" />
     <MESSAGE value="index.html fixed1" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html fixed1" />
+    <MESSAGE value="index.html et css fixed2" />
+    <MESSAGE value="index.html et css fixed3" />
+    <MESSAGE value="test 2" />
+    <MESSAGE value="test 3" />
+    <MESSAGE value="script se rapproche de la fin" />
+    <MESSAGE value="fini (presque) manque" />
+    <MESSAGE value="css" />
+    <option name="LAST_COMMIT_MESSAGE" value="css" />
   </component>
 </project>

@@ -6,32 +6,16 @@
 </head>
 
 <body>
-<h1 class="titre">Crawlendar</h1>
+<h1>Crawlendar</h1>
 
-<table>
-    <thead>
-    <tr>
-        <th>Dim</th>
-        <th>Lun</th>
-        <th>Mar</th>
-        <th>Mer</th>
-        <th>Jeu</th>
-        <th>Ven</th>
-        <th>Sam</th>
-    </tr>
-    </thead>
-    <tbody>
-    <!-- Code pour afficher les jours du calendrier -->
-    </tbody>
-</table>
+<form name="date-input-form" action="" method="GET">
 
-<form name="date-input-form">
-    <h1>Pour quel année souhaitez vous avec des informations?</h1>
+    <h1>Rentrez un date au format mois/année</h1>
 
-    <div role="group" class="date-group">
+    <div class="date-group" role="group">
         <div class="fieldgroup month">
-            <select name="options" id="options">
-                <option value="selectionnez un mois">selectionnez un mois</option>
+            <select id="month" name="month" required>
+                <option disabled selected value=""></option>
                 <option value="Janvier">Janvier</option>
                 <option value="Février">Février</option>
                 <option value="Mars">Mars</option>
@@ -45,23 +29,24 @@
                 <option value="Novembre">Novembre</option>
                 <option value="Décembre">Décembre</option>
             </select>
-            <label for="options">Month</label>
+            <label for="month">Month</label>
         </div>
 
         <div class="fieldgroup year">
-            <input type="number" name="year" min="0" max="2023" required>
+            <input type="number" id="year" name="year" min="1" max="2022" required>
             <label for="year">Year</label>
         </div>
     </div>
-    <input type="button" value="Confirmer" id="confirm">
+    <input id="confirm" type="button" value="Confirm">
+    <input id="reset" type="reset" value="Reset">
 </form>
 
 <div class="reponse">
-    <p>blabla</p>
+    <p id="reponseContent"><!-- Le contenu sera mis à jour ici --></p>
 </div>
 
+<script src="/js/script.js"></script>
 
-<script src="static/js/showDate.js"></script>
 
 </body>
 </html>

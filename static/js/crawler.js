@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const {json} = require("express");
-async function searchEventsByMonthYear(month, year) {
+async function searchEvents(month, year) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -35,7 +35,7 @@ async function searchEventsByMonthYear(month, year) {
                 });
         });
         const data = JSON.stringify(events, null, 2);
-        fs.writeFileSync('../../events.json', data);
+        fs.writeFileSync('./events.json', data);
         console.log(`Les informations pour ${month} ${year} ont été enregistrées dans events.json.`);
     } catch (error) {
         console.error('Une erreur est survenue :', error);
@@ -46,7 +46,7 @@ async function searchEventsByMonthYear(month, year) {
 
 
 
-async function searchArticleByDayMonthYear(link, year) {
+async function searchArticle(link, year) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -78,6 +78,7 @@ async function searchArticleByDayMonthYear(link, year) {
         }, year);
         if (article) {
             console.log(`Phrase trouvée : ${article.title}`);
+            return article.title;
         } else {
             console.log(`Aucune phrase trouvée pour l'année ${year}.`);
         }
@@ -91,5 +92,6 @@ async function searchArticleByDayMonthYear(link, year) {
 
 
 
+module.exports = { searchArticle,searchEvents };
 
 // Utilisation : spécifier le mois et l'année souhaités (mois orthographes : 'Janvier' , 'Février' , 'Mars' , 'Avril' , 'Mai' , 'Juin' , 'Juillet' , 'Août' , 'Septembre' , 'Octobre' , 'Novembre' , 'Décembre')

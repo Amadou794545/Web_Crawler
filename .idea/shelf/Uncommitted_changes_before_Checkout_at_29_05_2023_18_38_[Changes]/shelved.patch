@@ -1,0 +1,35 @@
+Index: template/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Crawlendar</title>\r\n    <link rel=\"stylesheet\" href=\"/css/index.css\">\r\n</head>\r\n\r\n<body>\r\n<h1>Crawlendar</h1>\r\n\r\n<form name=\"date-input-form\" action=\"\" method=\"GET\">\r\n\r\n    <h1>Rentrez un date au format mois/année</h1>\r\n\r\n    <div class=\"date-group\" role=\"group\">\r\n        <div class=\"fieldgroup month\">\r\n            <select id=\"month\" name=\"month\" required>\r\n                <option disabled selected value=\"\"></option>\r\n                <option value=\"Janvier\">Janvier</option>\r\n                <option value=\"Février\">Février</option>\r\n                <option value=\"Mars\">Mars</option>\r\n                <option value=\"Avril\">Avril</option>\r\n                <option value=\"Mai\">Mai</option>\r\n                <option value=\"Juin\">Juin</option>\r\n                <option value=\"Juillet\">Juillet</option>\r\n                <option value=\"Août\">Août</option>\r\n                <option value=\"Septembre\">Septembre</option>\r\n                <option value=\"Octobre\">Octobre</option>\r\n                <option value=\"Novembre\">Novembre</option>\r\n                <option value=\"Décembre\">Décembre</option>\r\n            </select>\r\n            <label for=\"month\">Month</label>\r\n        </div>\r\n\r\n        <div class=\"fieldgroup year\">\r\n            <input type=\"number\" id=\"year\" name=\"year\" min=\"1\" max=\"2022\" required>\r\n            <label for=\"year\">Year</label>\r\n        </div>\r\n    </div>\r\n    <input id=\"confirm\" type=\"button\" value=\"Confirm\">\r\n    <input id=\"reset\" type=\"reset\" value=\"Reset\">\r\n</form>\r\n\r\n<div class=\"reponse\">\r\n    <p>blabla</p>\r\n</div>\r\n\r\n<script src=\"/js/script.js\"></script>\r\n\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/template/index.html b/template/index.html
+--- a/template/index.html	(revision 56bd9ddc665623f153fe05c9f9e7b93b173e424c)
++++ b/template/index.html	(date 1685378256213)
+@@ -8,6 +8,24 @@
+ <body>
+ <h1>Crawlendar</h1>
+ 
++<table>
++    <thead>
++    <tr>
++        <th>Dim</th>
++        <th>Lun</th>
++        <th>Mar</th>
++        <th>Mer</th>
++        <th>Jeu</th>
++        <th>Ven</th>
++        <th>Sam</th>
++    </tr>
++    </thead>
++    <tbody>
++    <!-- Code pour afficher les jours du calendrier -->
++    </tbody>
++</table>
++
++
+ <form name="date-input-form" action="" method="GET">
+ 
+     <h1>Rentrez un date au format mois/année</h1>
