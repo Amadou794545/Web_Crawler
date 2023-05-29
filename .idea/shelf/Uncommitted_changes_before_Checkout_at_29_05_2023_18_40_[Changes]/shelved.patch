@@ -1,0 +1,83 @@
+Index: template/index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html>\r\n<head>\r\n    <title>Crawlendar</title>\r\n    <link rel=\"stylesheet\" href=\"../static/css/index.css\">\r\n</head>\r\n\r\n<body>\r\n<h1 class=\"titre\">Crawlendar</h1>\r\n\r\n<table>\r\n    <thead>\r\n    <tr>\r\n        <th>Dim</th>\r\n        <th>Lun</th>\r\n        <th>Mar</th>\r\n        <th>Mer</th>\r\n        <th>Jeu</th>\r\n        <th>Ven</th>\r\n        <th>Sam</th>\r\n    </tr>\r\n    </thead>\r\n    <tbody>\r\n    <!-- Code pour afficher les jours du calendrier -->\r\n    </tbody>\r\n</table>\r\n\r\n<form name=\"date-input-form\">\r\n    <h1>Pour quel année souhaitez vous avec des informations?</h1>\r\n\r\n    <div role=\"group\" class=\"date-group\">\r\n        <div class=\"fieldgroup month\">\r\n            <select name=\"options\" id=\"options\">\r\n                <option value=\"selectionnez un mois\">selectionnez un mois</option>\r\n                <option value=\"Janvier\">Janvier</option>\r\n                <option value=\"Février\">Février</option>\r\n                <option value=\"Mars\">Mars</option>\r\n                <option value=\"Avril\">Avril</option>\r\n                <option value=\"Mai\">Mai</option>\r\n                <option value=\"Juin\">Juin</option>\r\n                <option value=\"Juillet\">Juillet</option>\r\n                <option value=\"Août\">Août</option>\r\n                <option value=\"Septembre\">Septembre</option>\r\n                <option value=\"Octobre\">Octobre</option>\r\n                <option value=\"Novembre\">Novembre</option>\r\n                <option value=\"Décembre\">Décembre</option>\r\n            </select>\r\n            <label for=\"options\">Month</label>\r\n        </div>\r\n\r\n        <div class=\"fieldgroup year\">\r\n            <input type=\"number\" name=\"year\" min=\"0\" max=\"2023\" required>\r\n            <label for=\"year\">Year</label>\r\n        </div>\r\n    </div>\r\n    <input type=\"button\" value=\"Confirmer\" id=\"confirm\">\r\n</form>\r\n\r\n<div class=\"reponse\">\r\n    <p>blabla</p>\r\n</div>\r\n\r\n\r\n<script src=\"static/js/showDate.js\"></script>\r\n\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/template/index.html b/template/index.html
+--- a/template/index.html	(revision 9b0c023c26535a5983922fd4594dc5b8149e8115)
++++ b/template/index.html	(date 1685378359300)
+@@ -2,36 +2,20 @@
+ <html>
+ <head>
+     <title>Crawlendar</title>
+-    <link rel="stylesheet" href="../static/css/index.css">
++    <link rel="stylesheet" href="/css/index.css">
+ </head>
+ 
+ <body>
+-<h1 class="titre">Crawlendar</h1>
++<h1>Crawlendar</h1>
+ 
+-<table>
+-    <thead>
+-    <tr>
+-        <th>Dim</th>
+-        <th>Lun</th>
+-        <th>Mar</th>
+-        <th>Mer</th>
+-        <th>Jeu</th>
+-        <th>Ven</th>
+-        <th>Sam</th>
+-    </tr>
+-    </thead>
+-    <tbody>
+-    <!-- Code pour afficher les jours du calendrier -->
+-    </tbody>
+-</table>
++<form name="date-input-form" action="" method="GET">
+ 
+-<form name="date-input-form">
+-    <h1>Pour quel année souhaitez vous avec des informations?</h1>
++    <h1>Rentrez un date au format mois/année</h1>
+ 
+-    <div role="group" class="date-group">
++    <div class="date-group" role="group">
+         <div class="fieldgroup month">
+-            <select name="options" id="options">
+-                <option value="selectionnez un mois">selectionnez un mois</option>
++            <select id="month" name="month" required>
++                <option disabled selected value=""></option>
+                 <option value="Janvier">Janvier</option>
+                 <option value="Février">Février</option>
+                 <option value="Mars">Mars</option>
+@@ -45,23 +29,24 @@
+                 <option value="Novembre">Novembre</option>
+                 <option value="Décembre">Décembre</option>
+             </select>
+-            <label for="options">Month</label>
++            <label for="month">Month</label>
+         </div>
+ 
+         <div class="fieldgroup year">
+-            <input type="number" name="year" min="0" max="2023" required>
++            <input type="number" id="year" name="year" min="1" max="2022" required>
+             <label for="year">Year</label>
+         </div>
+     </div>
+-    <input type="button" value="Confirmer" id="confirm">
++    <input id="confirm" type="button" value="Confirm">
++    <input id="reset" type="reset" value="Reset">
+ </form>
+ 
+ <div class="reponse">
+     <p>blabla</p>
+ </div>
+ 
++<script src="/js/script.js"></script>
+ 
+-<script src="static/js/showDate.js"></script>
+ 
+ </body>
+ </html>
