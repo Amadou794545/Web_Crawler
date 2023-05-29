@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="index.html et css fixed2" />
+    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="index.html et css fixed3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/crawler.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/crawler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/parseJson.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/parseJson.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/js/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/events.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -61,9 +71,9 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\edand\Desktop\web-crawler_js" />
+      <recent name="C:\Users\edand\Desktop\web-crawler_js\static\js" />
       <recent name="C:\Users\edand\Desktop\web-crawler_js\json" />
       <recent name="C:\Users\edand\Desktop\web-crawler_js\static\css" />
-      <recent name="C:\Users\edand\Desktop\web-crawler_js\static\js" />
       <recent name="C:\Users\edand\Desktop\web-crawler_js\static" />
     </key>
   </component>
@@ -134,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685107291945</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="index.html et css fixed3">
+      <created>1685107505846</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685107505846</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +189,7 @@
     <MESSAGE value="dossier organiser" />
     <MESSAGE value="index.html fixed1" />
     <MESSAGE value="index.html et css fixed2" />
-    <option name="LAST_COMMIT_MESSAGE" value="index.html et css fixed2" />
+    <MESSAGE value="index.html et css fixed3" />
+    <option name="LAST_COMMIT_MESSAGE" value="index.html et css fixed3" />
   </component>
 </project>

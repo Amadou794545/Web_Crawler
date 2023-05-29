@@ -1,7 +1,7 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const {json} = require("express");
-async function searchEventsByMonthYear(month, year) {
+async function searchEvents(month, year) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -46,7 +46,7 @@ async function searchEventsByMonthYear(month, year) {
 
 
 
-async function searchArticleByDayMonthYear(link, year) {
+async function searchArticle(link, year) {
     const browser = await puppeteer.launch();
     const page = await browser.newPage();
 
@@ -91,5 +91,6 @@ async function searchArticleByDayMonthYear(link, year) {
 
 
 
+module.exports = { searchArticle,searchEvents };
 
 // Utilisation : spécifier le mois et l'année souhaités (mois orthographes : 'Janvier' , 'Février' , 'Mars' , 'Avril' , 'Mai' , 'Juin' , 'Juillet' , 'Août' , 'Septembre' , 'Octobre' , 'Novembre' , 'Décembre')

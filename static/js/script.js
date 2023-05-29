@@ -1,16 +1,27 @@
-// Récupérer le bouton "Confirm"
-var confirmButton = document.querySelector("#confirm");
+const { searchArticle,searchEvents } = require('./crawler');
+const { readEventsFromFile } = require('./parseJson');
 
-// Ajouter un gestionnaire d'événement lorsque le bouton "Confirm" est cliqué
-confirmButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Empêcher le comportement par défaut du bouton (rechargement de la page)
 
-    // Récupérer les valeurs des champs de formulaire
-    var month = document.querySelector("#options").value;
-    var year = document.querySelector("input[name='year']").value;
+const monthSelect = document.getElementById('month');
+const selectedMonth = monthSelect.value;
 
-    // Afficher les valeurs
-    var resultContainer = document.createElement("div");
-    resultContainer.textContent = "Month: " + month + ", Year: " + year;
-    document.body.appendChild(resultContainer);
-});
+const yearInput = document.getElementById('year');
+const selectedYear = yearInput.value;
+
+
+const confirmButton = document.getElementById('confirm');
+confirmButton.addEventListener('click', lancerProgramme);
+
+function lancerProgramme() {
+    console.log('Le programme est lancé !');
+    if (selectedYear < 1 || selectedYear > 2023){
+        console.log("erreur de séléction de l'année")
+    }else{
+        searchEvents(selectedMonth, selectedYear)
+        var eventsJSON = readEventsFromFile()
+        console.log("ca marche ")
+    }
+    // Vous pouvez appeler votre fonction ou exécuter d'autres opérations ici
+}
+
+
