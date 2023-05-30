@@ -26,7 +26,6 @@ Make sure you have Node.js installed on your machine.
 1. Start the server:
     ```bash
    node server.js
-
 2. Open your browser and go to the following URL: [http://localhost:3000](http://localhost:3000).
 
 3. In the user interface, select a month and year to search for the corresponding historical events.
