@@ -229,3 +229,12 @@ input[type=number]::-webkit-outer-spin-button {
     top: 10vh;
     position: relative;
 }
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}

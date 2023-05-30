@@ -17,3 +17,11 @@ document.getElementById('confirm').addEventListener('click', () => {
     };
     xhr.send();
 });
+
+function displayResponse(response) {
+    const reponseContentElement = document.getElementById('reponseContent');
+    const paragraphs = response.eventsText.split('</p>');
+    reponseContentElement.innerHTML = paragraphs.join('</p><br>');
+}
+
+
