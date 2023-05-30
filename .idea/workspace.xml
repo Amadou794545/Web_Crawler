@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="finish (some fixed to do)">
-      <change afterPath="$PROJECT_DIR$/static/js/showDate.js" afterDir="false" />
+    <list default="true" id="d908ba61-f8b5-4e8d-a1bd-1955964d9028" name="Changes" comment="finish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/events.json" beforeDir="false" afterPath="$PROJECT_DIR$/events.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,7 @@
       <workItem from="1685094078397" duration="6628000" />
       <workItem from="1685362948675" duration="4483000" />
       <workItem from="1685372472568" duration="4780000" />
-      <workItem from="1685435589340" duration="2343000" />
+      <workItem from="1685435589340" duration="5722000" />
     </task>
     <task id="LOCAL-00001" summary="add gitignore + crawl.js">
       <created>1683618569084</created>
@@ -195,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685381130055</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="finish">
+      <created>1685438706921</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1685438706921</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +242,7 @@
     <MESSAGE value="fini (presque) manque" />
     <MESSAGE value="css" />
     <MESSAGE value="finish (some fixed to do)" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish (some fixed to do)" />
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
 </project>
